@@ -42,12 +42,19 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "launch": "react-scripts start", 
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "db:build": "node ./db/init_db",
-    "server:dev": "nodemon index.js"
+    "server:dev": "nodemon index.js",
+
+    "dev": "run-p dev:**",
+    "dev:server": "nodemon server.js",
+    "dev:app": "yarn start",
+    "build:app": "yarn build",
+    "start": "node server.js",
+    "heroku-postbuild": "npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "eslintConfig": {
     "extends": [

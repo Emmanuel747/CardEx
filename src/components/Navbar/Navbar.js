@@ -5,6 +5,8 @@ import { BiUser } from 'react-icons/bi'
 import {clearToken, getToken } from '../../api/index';
 import { useHistory } from 'react-router-dom';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import CardExLogo from "../../assets/CardEx Logo.png";
+
 import "./Navbar.css";
 
 const Navbar = (
@@ -50,8 +52,21 @@ const Navbar = (
 				{/* <li id="settings">
 					<a href="#"> <FcSettings /> </a>
 				</li> */}
+				{/* <li><a href="/">
+					<img src={CardExLogo} 
+						style={{height:"23px"}}
+						alt={"CardEx Logo"}
+					/></a>
+				</li> */}
 				<li>
-					<a href="/">CardEx US</a>
+					<a href="/"> 
+						<img 
+							src={CardExLogo} 
+							style={{height:"23px", marginRight:"9px"}}
+							alt={"CardEx Logo"}
+						/>
+					 	CardEx US
+					</a>
 				</li>
 				<li>
 					<a href="/sellcards">Sell Cards</a>
@@ -93,7 +108,5 @@ const Navbar = (
 		</div>
 	);
 }
-
-
 
 export default Navbar;
