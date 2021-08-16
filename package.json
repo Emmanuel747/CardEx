@@ -44,13 +44,13 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "heroku-postbuild": "npm install && npm run build",
     "db:build": "node ./db/init_db",
     "server:dev": "nodemon index.js",
-    "heroku-postbuild": "npm run build"
+    "start": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
