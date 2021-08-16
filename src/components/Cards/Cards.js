@@ -25,8 +25,6 @@ const PlayingCards = ({cards, setCards, reset,
   }
 
   const addToCart = async (user, cardId, quantity = 1) => {
-    console.log(cardId);
-    console.log(user.id)
     try {
       const TOKEN = getToken();
       if (TOKEN) {

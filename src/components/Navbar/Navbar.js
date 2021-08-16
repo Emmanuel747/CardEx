@@ -5,8 +5,6 @@ import { BiUser } from 'react-icons/bi'
 import {clearToken, getToken } from '../../api/index';
 import { useHistory } from 'react-router-dom';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-
-
 import "./Navbar.css";
 
 const Navbar = (
@@ -27,7 +25,6 @@ const Navbar = (
 
 	const [searchTerm, setSearchTerm] = useState("");
 	useEffect(() => {
-		
 	}, [cart]);
 
   const handleSearch = (event) => {
@@ -44,7 +41,6 @@ const Navbar = (
 
 	const searchOnChange = (event) => {
     const keyword = event.target.value;
-		console.log(keyword)
     setSearchTerm(keyword);
   };
 
@@ -63,13 +59,9 @@ const Navbar = (
 				<li id="search">
 						<form action="" method="get">
 							<input type="text" name="search_text" id="search_text" placeholder="Search"
-								onChange={(e) => {searchOnChange(e)}}
-								onKeyPress={(e) => {
-									let key = e.keyCode || e.which;
-									if (key === 13) {
-										handleSearch(e);
-										console.log("Enter Button has been clicked")
-									}
+								onChange={(e) => {
+									searchOnChange(e)
+									handleSearch(e)
 								}}
 							/>
 							<input type="button" name="search_button" id="search_button"
