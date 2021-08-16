@@ -47,6 +47,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "db:build": "node ./db/init_db",
+    "seed": "node ./db/seed.js",
     "server:dev": "nodemon index.js"
   },
   "eslintConfig": {
