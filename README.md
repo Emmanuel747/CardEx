@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a personal project which is a work in progress. I will be updating it very soon but is meant to show off my: 
+- Frontend reactJS skills
+- CSS styling 
+- Backend development with a fully built REST API
+- Database design
 
 [App](https://cardex-us.herokuapp.com/).
 ![image](https://user-images.githubusercontent.com/64562287/129811315-af689ee5-13e0-4bfe-bfb4-bdc5dcaed0b9.png)
