@@ -92,7 +92,7 @@ const PlayingCards = ({cards, setCards, reset,
               <div>Watchers: <b>{view_count}</b></div>   
               {/* <li>Listing Date: <span>{creation_date}</span></li> */}
             </div>
-            <div className=" prices ">
+            <div className="prices">
               <div className="col ">
                 <h4 className="m-0 font-weight-bold">
                   <div> {formatter.format(price)} </div>

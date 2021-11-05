@@ -34,7 +34,7 @@ async function buildTables() {
     console.log("Starting to create tables");
     await client.query(`
             CREATE TABLE users(
-                id SERIAL PRIMARY KEY,
+                ID SERIAL PRIMARY KEY,
                 username VARCHAR(255) UNIQUE NOT NULL,
                 email VARCHAR(255) UNIQUE,
                 password VARCHAR(255) NOT NULL,
