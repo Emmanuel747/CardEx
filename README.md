@@ -1,3 +1,22 @@
+# Developer's notes
+1) Backend was built with Node.js and PostgreSQL
+  - Must create a local DB named cardex-dev
+  - *To populate or reintialize* the Database run: "npm start db:build"
+  - Next run "npm start server:dev"
+3) Open another terminal
+2) For first launch:
+  - Delete package-lock.json, node_modules folder
+  - Run command "npm i" in your terminal
+  - Run command "npm run launch"
+
+Site should be running locally.
+
+Useful postgres commands
+\l - list all databases current user has access to
+\c database_name; edit that database
+
+old branch name: Database2Cloud-Build
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
