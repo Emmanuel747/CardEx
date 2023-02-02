@@ -4,6 +4,7 @@ const DB_URL = process.env.DATABASE_URL || `https://localhost:5432/${DB_NAME}`;
 // const client = new Client(DB_URL);
 // const client = new Client(DB_URL || `postgres://localhost:5432/${DB_NAME}`);
 
+// uncomment for local postgres database
 const client = new Client({
   connectionString: DB_URL || 'postgres://localhost:5432/cardex-dev',
   ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
