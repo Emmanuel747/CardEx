@@ -15,6 +15,7 @@ Useful postgres commands
 \l - list all databases current user has access to
 \c database_name; edit that database
 
+old branch name: Database2Cloud-Build
 
 # Getting Started with Create React App
 
