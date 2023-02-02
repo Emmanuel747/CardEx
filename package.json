@@ -39,22 +39,18 @@
     "react-toastify": "^7.0.4",
     "react-transition-group": "^4.4.2",
     "sass": "^1.35.1",
+    "serve": "^12.0.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "launch": "react-scripts start", 
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "heroku-postbuild": "npm install && npm run build",
     "db:build": "node ./db/init_db",
     "server:dev": "nodemon index.js",
-
-    "dev": "run-p dev:**",
-    "dev:server": "nodemon server.js",
-    "dev:app": "yarn start",
-    "build:app": "yarn build",
-    "start": "node server.js",
-    "heroku-postbuild": "npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "start": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
