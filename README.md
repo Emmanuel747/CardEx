@@ -1,5 +1,6 @@
 # Developer's notes
 1) Backend was built with Node.js and PostgreSQL
+  - run command in linux terminal: sudo service postgresql start
   - Must create a local DB named cardex-dev
   - *To populate or reintialize* the Database run: "npm start db:build"
   - Next run "npm start server:dev"
