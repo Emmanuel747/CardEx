@@ -48,7 +48,7 @@ const Navbar = (
 
 	return (
 		<div className="navbarContainer sticky-top">
-			<ul class="nav">
+			<ul className="nav">
 				{/* <li id="settings">
 					<a href="#"> <FcSettings /> </a>
 				</li> */}
@@ -87,7 +87,7 @@ const Navbar = (
 				<li id="options">
 					<>
 						<a href="#"><BiUser size={28} /> { isLoggedIn ? `${userDATA.username}` : "My Account"}</a>
-						<ul class="subnav">
+						<ul className="subnav">
 							<li><a href="#">User Profile</a></li>
 							<li><a href="#">Settings</a></li>
 							{ !isLoggedIn ? <li><a href="/register">Login</a></li> : "" }
@@ -100,7 +100,7 @@ const Navbar = (
 				</li>
 				<li id="options" className="cartList">
 					<a href="/cart"> {cart.length} <ShoppingCartIcon /> Cart</a>
-					<ul class="subnav cart">
+					<ul className="subnav cart">
 					</ul>
 				</li>
 			</ul>

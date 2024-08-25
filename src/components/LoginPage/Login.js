@@ -90,28 +90,28 @@ const LoginPage  = ({setIsLoggedIn, setUser, notifySignup, notifyLogin, userDATA
   }
 
   return (
-    <section class="user">
-      <div class="user_options-container">
-        <div class="user_options-text">
-          <div class="user_options-unregistered">
-            <h2 class="user_unregistered-title">Don't have a CardEX account?</h2>
-            <p class="user_unregistered-text">
+    <section className="user">
+      <div className="user_options-container">
+        <div className="user_options-text">
+          <div className="user_options-unregistered">
+            <h2 className="user_unregistered-title">Don't have a CardEX account?</h2>
+            <p className="user_unregistered-text">
               Join CardEx now and start trading today!
             </p>
-            <button class="user_unregistered-signup" id="signup-button"
+            <button className="user_unregistered-signup" id="signup-button"
               onClick={rmBounceR}
             >
               Sign up
             </button>
           </div>
 
-          <div class="user_options-registered">
-            <h2 class="user_registered-title">Have a CardEX account?</h2>
-            <p class="user_registered-text">
+          <div className="user_options-registered">
+            <h2 className="user_registered-title">Have a CardEX account?</h2>
+            <p className="user_registered-text">
               Already have an Account? Login Here.
             </p>
             <button 
-              class="user_registered-login" 
+              className="user_registered-login" 
               id="login-button"
               onClick={rmBounceL}
             >
@@ -120,88 +120,88 @@ const LoginPage  = ({setIsLoggedIn, setUser, notifySignup, notifyLogin, userDATA
           </div>
         </div>
 
-        <div class="user_options-forms" id="user_options-forms">
-          <div class="user_forms-login">
-            <h2 class="forms_title">Login</h2>
+        <div className="user_options-forms" id="user_options-forms">
+          <div className="user_forms-login">
+            <h2 className="forms_title">Login</h2>
             <div id="errMsg" style={{color: '#ff0808'}} > {errMsgText} </div> 
 
             {/* The Login Form */}
-            <form class="forms_form" onSubmit={(e) => {LoginUser( e, username, password)}}>
-              <fieldset class="forms_fieldset">
-                <div class="forms_field">
-                  <input type="text" class="forms_field-input" required 
+            <form className="forms_form" onSubmit={(e) => {LoginUser( e, username, password)}}>
+              <fieldset className="forms_fieldset">
+                <div className="forms_field">
+                  <input type="text" className="forms_field-input" required 
                     onChange={(event) => {
                       setUsername(event.target.value);
                     }}
                   />
-                  <label class="forms_field-label">Username</label>
+                  <label className="forms_field-label">Username</label>
                 </div>
-                <div class="forms_field">
-                  <input type="password" class="forms_field-input" minlength="6" required 
+                <div className="forms_field">
+                  <input type="password" className="forms_field-input" minlength="6" required 
                     onChange={(event) => {
                       setPassword(event.target.value);
                     }}
                   />
-                  <label class="forms_field-label">Password</label>
+                  <label className="forms_field-label">Password</label>
                 </div>
               </fieldset>
-              <div class="forms_buttons">
-                <button type="button" class="forms_buttons-forgot">
+              <div className="forms_buttons">
+                <button type="button" className="forms_buttons-forgot">
                   Forgot password?
                 </button>
                 <input
                   type="submit"
                   value="Login"
-                  class="forms_buttons-action"                 
+                  className="forms_buttons-action"                 
                 />
               </div>
             </form>
           </div>
-          <div class="user_forms-signup">
-            <h2 class="forms_title">Sign Up</h2>
+          <div className="user_forms-signup">
+            <h2 className="forms_title">Sign Up</h2>
             <div id="errMsg" style={{color: '#ff0808'}}> {errMsgText} </div>
 
             {/* The Sign Up Form */}
-            <form class="forms_form" onSubmit={(event) => {SignupUser( event, username, password, email)}}>
-              <fieldset class="forms_fieldset">
-                <div class="forms_field">
-                  <input type="text" class="forms_field-input" required 
+            <form className="forms_form" onSubmit={(event) => {SignupUser( event, username, password, email)}}>
+              <fieldset className="forms_fieldset">
+                <div className="forms_field">
+                  <input type="text" className="forms_field-input" required 
                     onChange={(event) => {
                       setUsername(event.target.value);
                     }} 
                   />
-                  <label class="forms_field-label"> Username </label>
+                  <label className="forms_field-label"> Username </label>
                 </div>
-                <div class="forms_field">
-                  <input type="text" class="forms_field-input" required 
+                <div className="forms_field">
+                  <input type="text" className="forms_field-input" required 
                     onChange={(event) => {
                       setEmail(event.target.value);
                     }} 
                   />
-                  <label class="forms_field-label"> Email </label>
+                  <label className="forms_field-label"> Email </label>
                 </div>
-                <div class="forms_field">
-                  <input type="password" class="forms_field-input" required 
+                <div className="forms_field">
+                  <input type="password" className="forms_field-input" required 
                     onChange={(event) => {
                       setPassword(event.target.value);                     
                     }} 
                   />
-                  <label class="forms_field-label">Password</label>
+                  <label className="forms_field-label">Password</label>
                 </div>
-                <div class="forms_field">
-                  <input type="password" class="forms_field-input" required
+                <div className="forms_field">
+                  <input type="password" className="forms_field-input" required
                     onChange={(e) => {
                       setRepassword(e.target.value);
                     }}
                   />
-                  <label class="forms_field-label">Confirm Password</label>
+                  <label className="forms_field-label">Confirm Password</label>
                 </div>
               </fieldset>
-              <div class="forms_buttons">
+              <div className="forms_buttons">
                 <input
                   type="submit"
                   value="Sign up"
-                  class="forms_buttons-action"                 
+                  className="forms_buttons-action"                 
                 />
               </div>
             </form>
